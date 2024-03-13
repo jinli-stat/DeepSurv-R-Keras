@@ -1,2 +1,2 @@
-# DeepSurvK-R
-Implementation of DeepSurv using R with Keras
+# DeepSurv-R-Keras
+Implementation of DeepSurv using R with Keras.
