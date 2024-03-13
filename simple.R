@@ -80,12 +80,3 @@ cat(paste0("c-index of training dataset = ", c_index_train, "\n"))
 
 c_index_test <- survcomp::concordance.index(model %>% predict(X_test), Y_test[, 2], Y_test[, 1])$c.index
 cat(paste0("c-index of testing dataset = ", c_index_test, "\n"))
-
-# Y_pred_train <- exp(-(model %>% predict(X_train)))
-# lifelines <- import("lifelines")
-# c_index_train <- lifelines$utils$concordance_index(Y_train, Y_pred_train, E_train)
-# cat(paste0("c-index of training dataset = ", c_index_train, "\n"))
-
-# install.packages("mlr3proba", repos = "https://mlr-org.r-universe.dev")
-# library(mlr3proba)
-# blhz <- breslow(Y_train, E_train, LP_train, LP_test[3], eval_times = 2, type = "cumhaz")
